@@ -1,0 +1,8 @@
+//lib
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~antd/dist/antd.css';
+
+//base
+@import './base/index.scss';
+@import './page/predict.scss';
+@import "./base/antd.scss";
