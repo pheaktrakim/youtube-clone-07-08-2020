@@ -11,7 +11,7 @@ function Layout ({children}) {
         </Row>
         
         <Row>
-          <Col md="1">
+          <Col md="1" className="max-nav">
             <center>
               <Naverbar />
             </center>

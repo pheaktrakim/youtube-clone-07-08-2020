@@ -25,14 +25,24 @@ function Header () {
   const onClose = () => {
     setVisible(false);
   };
-
-
+  const slideheader = (
+    <Row>
+    <Col md="6">
+      <WrapIconLogo>
+        <MenuIcon fontSize="large" onClick={onClose}/>
+      </WrapIconLogo>
+    </Col>
+    <Col md="6">
+      <ImageLogo src={LOGO} alt="logo" className="cs-p"/>
+    </Col>
+    </Row>
+  );
 
   return (
     <Container fluid className="p-3" style={{borderBottom: '1px solid rgb(235 235 235)'}}>
       {/* Drawer */}
       <Drawer
-        title="Setting"
+        title={slideheader}
         placement="left"
         closable={false}
         onClose={onClose}
